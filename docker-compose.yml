@@ -1,0 +1,20 @@
+version: '2'
+services:
+  web:
+    build: .
+    ports:
+      - "4000:4000"
+    command: mix phx.server
+    environment:
+      - MIX_ENV=dev
+      - PORT=4000
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+  db:
+    image: postgres:alpine
+    environment:
+      - POSTGRES_DB=phoenix
+      - POSTGRES_USER=<needs-to-match-dev-config>
+      - POSTGRES_PASSWORD=<needs-to-match-dev-config>
