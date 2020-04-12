@@ -22,7 +22,7 @@ In this repo are two files: a `Dockerfile` and a `docker-compose.yml` file. To c
 
 4. Depending on what kind of project you are creating, run the following:
 
-    - `Phoenix:` `mix phx.new new_project --app new_project --no-brunch` - this creates the `new_project` phoenix project (I'm a fan of `--no-brunch`). 
+    - `Phoenix:` `mix phx.new new_project --app new_project --no-webpack` - this creates the `new_project` phoenix project (I'm a fan of `--no-webpack`). 
     
     - `Mix:` `mix new new_project`  
     
