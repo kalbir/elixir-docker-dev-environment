@@ -5,8 +5,8 @@ MAINTAINER Kalbir Sohi <kalbir@gmail.com>
 RUN apt-get update \
     && apt-get -y install sudo \
     && apt-get -y install curl \
-    && apt-get -y install apt-utils
-
+    && apt-get -y install apt-utils \
+    && apt-get -y install inotify-tools
 # Create an app directory to store our files in
 ADD . /app
 
